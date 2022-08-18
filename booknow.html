@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<style>
+    .form-center {
+  display:flex;
+  justify-content: center;
+}
+</style>
+<body style="background-color: grey;">
+    <div class="form-center">
+   <form >
+  
+        
+        <div class="mb-3">
+          <label for="validationTextarea">Specifications</label>
+          <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Enter your requirements" required></textarea>
+          <div class="invalid-feedback">
+            
+          </div>
+        </div>
+      
+        <div class="custom-control custom-checkbox mb-3">
+            <h6>choose a valid option</h6>
+          <input type="checkbox" class="custom-control-input" id="customControlValidation1" >
+          <label class="custom-control-label" for="customControlValidation1">Hair</label>
+          <div class="invalid-feedback">HairStyling/Haircut/hairspa</div>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="customControlValidation2" >
+            <label class="custom-control-label" for="customControlValidation2">Makeup</label>
+            <div class="invalid-feedback">Bridal/Casual</div>
+          </div>
+          <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="customControlValidation3"  >
+            <label class="custom-control-label" for="customControlValidation3">Spa</label>
+            <div class="invalid-feedback">Body massage/manicure/pedicure</div>
+          </div>
+
+      
+        <div class="custom-control custom-radio">
+          <input type="radio" class="custom-control-input" id="customControlValidation4" name="radio-stacked" required>
+          <label class="custom-control-label" for="customControlValidation4">Morning 10am-12pm</label>
+        </div>
+        <div class="custom-control custom-radio mb-3">
+          <input type="radio" class="custom-control-input" id="customControlValidation5" name="radio-stacked" required>
+          <label class="custom-control-label" for="customControlValidation5">Evening 5pm-7pm</label>
+          <div class="invalid-feedback">More example invalid feedback text</div>
+        </div>
+      
+        <div class="form-group">
+          <select class="custom-select" required>
+            <option value="">Select days</option>
+            <option value="1">monday</option>
+            <option value="2">Tuesday</option>
+            <option value="3">Thrusday</option>
+            <option value="3">friday</option>
+            <option value="3">saturday</option>
+            <option value="3">sunday</option>
+
+          </select>
+          <div class="invalid-feedback">Example invalid custom select feedback</div>
+        </div>
+      
+        <button class="btn btn-primary" type="submit">Book </button>
+      </form>
+    </div>
+</body>
+</html>

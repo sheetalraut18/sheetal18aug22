@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: brown;
+            
+           
+        }
+        button{
+            background-color: brown;
+            float: center;
+            height:  75%;
+        }
+        
+        body {
+        
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-size: cover;
+         background-color:bisque;
+         
+        }
+       
+    </style>
+    <script>
+        function sortList(){
+            var list,i,run,li,stop;
+            list=document.getElementById("list");
+            run =true;
+            while(run){
+                run =false;
+                li=document.getElementsByTagName("LI");
+                for(i=0;i<=(li.length-1);i++){
+                    stop =false;
+                    if(li[i].innerHTML.toLowerCase()>li[i+1].innerHTML.toLowerCase()){
+                        stop =true;
+                        break;
+                    }
+
+                }
+                if(stop){
+                    li[i].parentNode.insertBefore(li[i+1],li[i]);
+                    run =true;
+                }
+            }
+        }
+    </script>
+</head>
+<body >
+    
+    <h1>Home</h1>
+    <ol class="list" >
+        <li>Hair</li>
+        <ul>
+            <li>Spa</li>
+            <li>Haircut</li>
+            <ul>
+                <li>Massage</li>
+                <li>MAnicure</li>
+            </ul>
+            <li>pedicure</li>
+            <li>oil massage</li>
+            
+        </ul>
+        <li>Spa</li>
+        <ul>
+           <li> body massage</li>
+           <li>massage</li>
+          
+        </ul>
+    </ol>
+   
+    
+    
+</body>
+</html>
